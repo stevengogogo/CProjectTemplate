@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "include/bigint.h"
-
-#define MAX_DEC 256
+#include <stdio.h>
+#include "include/utils.h"
 
 int main()
 {
     
-    bigint a = newnumc("34343");
     // newnumc("3434");
-    int i = 1;
+    int a = 1;
+    int b = 3;
+    extm big;
     //scanf("%s %s", a, b);
-    
+    big = max(&a, &b);
 
     //bigint* I = newnumc(a[1]);
-    printf("Hello World\n");
+    printf("Compare a(=%d) and b(=%d): maximum equals to %d\n",a,b,big.extreme);
 
     return 0;
 }
