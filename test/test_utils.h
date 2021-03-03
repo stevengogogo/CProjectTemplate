@@ -11,7 +11,7 @@ void test_utils(void)
     extm m = max(&a,&b);
     extm MIN = min(&a, &b);
     TEST_CHECK(m.extreme  == b );
-    TEST_CHECK(MIN.extreme != a);
+    TEST_CHECK(MIN.extreme == a);
 }
 
 
