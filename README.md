@@ -16,12 +16,12 @@ Features
 ----------
 
 - Clear structures
-    - [Source](src/) and [test](test/) 
-    - Header file are organized under [`src/include/`](src/include) 
+    - [Source](https://github.com/stevengogogo/CProjectTemplate/blob/main/src/) and [test](https://github.com/stevengogogo/CProjectTemplate/blob/main/test/) 
+    - Header file are organized under [`src/include/`](https://github.com/stevengogogo/CProjectTemplate/blob/main/src/include) 
     - Building with [makfile](makefile)
 - Unit testing
      - Organized by  [`runtests.c`](test/runtest.c)
-     - Use [`acutest.h`] (test/acutest.h) debugging (Courtesy from [mity/acutest](https://github.com/mity/acutest))
+     - Use [`acutest.h`] (https://github.com/stevengogogo/CProjectTemplate/blob/main/test/acutest.h) debugging (Courtesy from [mity/acutest](https://github.com/mity/acutest))
  - Debugger with VScode
      - The configuration of debugger  are supported under  [`.vscode`](.vscode/) 
 
