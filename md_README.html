@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: CProjectTemplate</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 產生者: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜尋','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜尋');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">CProjectTemplate </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a href="https://github.com/stevengogogo/CProjectTemplate/actions/workflows/ci.yml"><img src="https://github.com/stevengogogo/CProjectTemplate/actions/workflows/ci.yml/badge.svg" alt="Ubuntu" style="pointer-events: none;" class="inline"/></a><a href="https://codecov.io/gh/stevengogogo/CProjectTemplate"><img src="https://codecov.io/gh/stevengogogo/CProjectTemplate/branch/main/graph/badge.svg?token=5F6B6C9M1K" alt="codecov" style="pointer-events: none;" class="inline"/></a></p>
+<p>Project template for C programming. Including debugging in VSCODE, makefile and Unit testing (+ Github CI)</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Usage</h1>
+<ul>
+<li><code>make BUILD</code></li>
+<li><code>make RUN</code></li>
+<li><code>make TEST</code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Features</h1>
+<ul>
+<li>Clear structures<ul>
+<li><a href="src/">Source</a> and <a href="test/">test</a></li>
+<li>Header file are organized under <a href="src/include"><code>src/include/</code></a></li>
+<li>Building with [makfile](makefile)</li>
+</ul>
+</li>
+<li>Unit testing<ul>
+<li>Organized by <a href="test/runtest.c"><code>runtests.c</code></a></li>
+<li>Use <a href="test/acutest.h"><code>acutest.h</code></a> debugging (Courtesy from <a href="https://github.com/mity/acutest">mity/acutest</a>)</li>
+</ul>
+</li>
+</ul>
+<p>Debugger with VScode</p><ul>
+<li>The configuration of debugger are supported under <a href=".vscode/"><code>.vscode</code></a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Prerequist</h1>
+<ol type="1">
+<li>Vscode</li>
+<li><code>build-essentials</code></li>
+<li>Linux</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md4"></a>
+How to use this C template</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Build and Run with &lt;tt&gt;src/main.c&lt;/tt&gt;</h2>
+<div class="fragment"><div class="line">make BUILD_RUN</div>
+</div><!-- fragment --><p><img src="https://user-images.githubusercontent.com/29009898/109116029-db116d80-777a-11eb-883a-f10f599d5cc5.png" alt="Screen Shot 2021-02-25 at 3 04 42 PM" width="977" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Unit testing</h2>
+<div class="fragment"><div class="line">make TEST</div>
+</div><!-- fragment --><p><img src="https://user-images.githubusercontent.com/29009898/109116100-f7150f00-777a-11eb-9de0-88eaef70a222.png" alt="Screen Shot 2021-02-25 at 3 04 06 PM" width="924" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Set workspace to this project</h2>
+<p><img src="https://user-images.githubusercontent.com/29009898/109115183-a5b85000-7779-11eb-97b2-1cde0b306cdb.png" alt="Workspace" width="400" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Use the debugger icon on  VScode</h2>
+<p><img src="https://user-images.githubusercontent.com/29009898/109115199-abae3100-7779-11eb-8c21-bc4d98be52a7.png" alt="GDB usage" width="2560" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+產生者:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
