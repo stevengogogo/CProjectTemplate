@@ -41,4 +41,9 @@ jobs:
       run: |
         make TEST
     - name: Code coverage using Codecov 
+      language: c
+      sudo: false # only for faster builds
+      script:
+        - ./test/build/test.out
+        - gcov src/*
       run: bash <(curl -s https://codecov.io/bash) 
