@@ -23,5 +23,10 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"主頁面",url:"index.html"},
-{text:"相關頁面",url:"pages.html"}]}
+{text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"}]}]}
