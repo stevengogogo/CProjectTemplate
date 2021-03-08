@@ -60,4 +60,6 @@ make TEST
 ### Use the debugger icon on  VScode
 <img width="2560" alt="GDB usage" src="https://user-images.githubusercontent.com/29009898/109115199-abae3100-7779-11eb-8c21-bc4d98be52a7.png">
 
+### Gihub CD (Continuouse Documentation)
+See [issue](https://github.com/stevengogogo/CProjectTemplate/issues/5) for tutorial 
 
