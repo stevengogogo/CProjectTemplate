@@ -2,18 +2,23 @@
 #define UTILS_H
 
 /**
- * @brief Add two points
- *
- * @param extreme
- * @param arg
- * @return struct Point
+ * @brief Store extreme value
+ * @param extreme extreme value
+ * @param arg argument
  */
 typedef struct {
     int extreme;
     int arg;
 } extm;
 
-extm max(int*,int*);
+/**
+ * @brief 
+ * 
+ * @param a 
+ * @param b 
+ * @return extm 
+ */
+extm max(int* a,int* b);
 extm min(int*,int*);
 
 
