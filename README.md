@@ -32,6 +32,9 @@ Prerequist
 1. Vscode
 2. `build-essentials`
 3. Linux
+4. python3.8
+5. pip
+6. `pip intall quom` (for merging to single c file) [See https://github.com/Viatorus/quom]
 
 How to use this C template
 --------------------------
@@ -63,3 +66,10 @@ make TEST
 ### Gihub CD (Continuouse Documentation)
 See [issue](https://github.com/stevengogogo/CProjectTemplate/issues/5) for tutorial 
 
+### Continuous Integration (CI)
+
+- Run unit testing on every push and PR [Thank @sosiristseng]
+
+### Continusous Deployment (CD)
+
+- Merged to single `main.c` file when tagging or releasing. [Thank @sosiristseng]
