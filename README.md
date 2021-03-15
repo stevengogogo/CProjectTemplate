@@ -30,7 +30,7 @@ Prerequist
 ----------
 
 1. Vscode
-2. `build-essentials`
+2. `build-essentials`. (Install `gdb` and xcode if you are using Mac)
 3. Linux
 4. python3.8
 5. pip
