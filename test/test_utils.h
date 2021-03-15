@@ -2,7 +2,7 @@
 #define TEST_UTILS_H
 
 #include "acutest.h"
-#include "include/utils.h"
+#include "utils.h"
 
 void test_utils(void)
 {

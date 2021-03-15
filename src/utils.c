@@ -1,4 +1,4 @@
-#include "include/utils.h"
+#include "utils.h"
 
 //Choose the bigger one
 extm max(int* a, int* b)
