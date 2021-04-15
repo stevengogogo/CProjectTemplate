@@ -37,7 +37,9 @@ jobs:
         sudo apt-get install build-essential
         gcc -v
         make -v
-      
+    - name: install valgrind
+      run: |
+        sudo apt-get install valgrind
     - name: clean
       run: |
        rm -rf ./build/*
@@ -47,6 +49,9 @@ jobs:
     - name: Run tests
       run: |
         make TEST
+    - name: Leak test
+      run: |
+        make LEAK
     - name: Code coverage using Codecov 
       run: bash <(curl -s https://codecov.io/bash) 
     - name: merge file to main
