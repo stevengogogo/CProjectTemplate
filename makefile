@@ -53,5 +53,7 @@ clean:
 cleantest:
 	rm -r test_TEMP
 
+LEAK: BUILD
+	valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out
 
 
