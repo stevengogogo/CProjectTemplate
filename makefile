@@ -1,6 +1,7 @@
 CFLAGS = -I.
 MAKEFLAGS += --silent
 CC=gcc -g 
+CCm = quom
 
 .PHONY: BUILD TEST RUN  BUILD_RUN  # Main piplines
 .PHONY: RUNTEST  MERGETEST cleantest clean
@@ -52,6 +53,11 @@ clean:
 
 cleantest:
 	rm -r test_TEMP
+
+MERGE_MAIN:
+	mkdir -p  $(build_folder)
+	$(CCm) $(src_folder)/main.c  build/main.c
+	$(CC) -o build/main_test_build.out build/main.c
 
 LEAK: BUILD
 	valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out

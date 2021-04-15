@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "include/utils.h"
+#include "utils.h"
 
 int main()
 {
