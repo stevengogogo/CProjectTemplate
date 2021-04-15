@@ -129,7 +129,22 @@ Continuous Integration (CI)</h2>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Continusous Deployment (CD)</h2>
 <ul>
-<li>Merged to single <code>main.c</code> file when tagging or releasing. [Thank @sosiristseng] </li>
+<li>Merged to single <code>main.c</code> file when tagging or releasing. [Thank @sosiristseng]</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Memory Leak Detection with Valgrind</h2>
+<ul>
+<li>The test file is set as <code>test/buil/test.out</code></li>
+<li>If you want to test <code>main.c</code>, it can be set simply by modifying the <code>makefile</code></li>
+<li>Leakage during test <div class="fragment"><div class="line">LEAK: TEST</div>
+<div class="line">    valgrind --leak-check=full --show-leak-kinds=all --verbose ./test/build/test.out</div>
+</div><!-- fragment --></li>
+<li>Leakage in <code>main.c</code> <div class="fragment"><div class="line">LEAK: BUILD</div>
+<div class="line">    valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out</div>
+</div><!-- fragment --></li>
+<li>noted that if <code>main.out</code> needs input. Use following command <div class="fragment"><div class="line">LEAK: BUILD</div>
+<div class="line">    valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out &lt; path2data.in</div>
+</div><!-- fragment --> </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
