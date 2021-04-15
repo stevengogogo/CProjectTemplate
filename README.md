@@ -10,7 +10,8 @@ Usage
 - `make BUILD`
 - `make RUN`
 - `make TEST`
-
+- `make LEAK`
+  - Need to install [valgrind](https://riptutorial.com/valgrind/example/32345/installation-or-setup)
 
 Features
 ----------
