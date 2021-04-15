@@ -73,3 +73,26 @@ See [issue](https://github.com/stevengogogo/CProjectTemplate/issues/5) for tutor
 ### Continusous Deployment (CD)
 
 - Merged to single `main.c` file when tagging or releasing. [Thank @sosiristseng]
+
+
+### Memory Leak Detection with Valgrind
+
+- The test file is set as `test/buil/test.out` 
+- If you want to test `main.c`, it can be set simply by modifying the `makefile`
+
+- Leakage during test
+```make
+LEAK: TEST
+	valgrind --leak-check=full --show-leak-kinds=all --verbose ./test/build/test.out
+```
+- Leakage in `main.c`
+```make
+LEAK: BUILD
+	valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out
+```
+
+- noted that if `main.out` needs input. Use following command
+```make
+LEAK: BUILD
+	valgrind --leak-check=full --show-leak-kinds=all --verbose ./build/main.out < path2data.in
+```
