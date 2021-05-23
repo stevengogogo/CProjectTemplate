@@ -79,17 +79,14 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">int</span> a, b;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    a = 1; b= 2;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="structextm.html">extm</a> m = <a class="code" href="utils_8h.html#a0341cab7f3cea9a0f5b50aea9baec4a3">max</a>(&amp;a,&amp;b);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="structextm.html">extm</a> MIN = min(&amp;a, &amp;b);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    TEST_CHECK(m.extreme  == b );</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    TEST_CHECK(MIN.extreme == a);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructextm_html"><div class="ttname"><a href="structextm.html">extm</a></div><div class="ttdoc">Store extreme value.</div><div class="ttdef"><b>Definition:</b> utils.h:19</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    TEST_CHECK(<a class="code" href="utils_8h.html#a1fa7fd55f201216ebf7800abb1c427a8">argmax</a>(a,b)  == 1 );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div><div class="ttdoc">General Utilities for C language.</div></div>
-<div class="ttc" id="autils_8h_html_a0341cab7f3cea9a0f5b50aea9baec4a3"><div class="ttname"><a href="utils_8h.html#a0341cab7f3cea9a0f5b50aea9baec4a3">max</a></div><div class="ttdeci">extm max(int *a, int *b)</div><div class="ttdef"><b>Definition:</b> utils.c:4</div></div>
+<div class="ttc" id="autils_8h_html_a1fa7fd55f201216ebf7800abb1c427a8"><div class="ttname"><a href="utils_8h.html#a1fa7fd55f201216ebf7800abb1c427a8">argmax</a></div><div class="ttdeci">int argmax(int a, int b)</div><div class="ttdoc">Argmax function with intergers.</div><div class="ttdef"><b>Definition:</b> utils.c:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
