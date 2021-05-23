@@ -12,25 +12,12 @@
 #define UTILS_H
 
 /**
- * @brief Store extreme value
- * @param extreme extreme value
- * @param arg argument
- */
-typedef struct {
-    int extreme;
-    int arg;
-} extm;
-
-/**
- * @brief 
+ * @brief Argmax function with intergers
  * 
  * @param a 
  * @param b 
- * @return extm 
+ * @return int 0 when a is larger than b. Otherwise, 0.
  */
-extm max(int* a,int* b);
-extm min(int*,int*);
-
-
+int argmax(int a, int b);
 
 #endif
